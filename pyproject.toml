@@ -1,0 +1,14 @@
+[project]
+name = "mcqs-maker"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flask>=3.1.2",
+    "nltk>=3.9.2",
+    "pdfreader>=0.1.15",
+    "pymupdf>=1.26.4",
+    "pypdf2>=3.0.1",
+    "routes>=2.5.1",
+]

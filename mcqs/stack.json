@@ -1,0 +1,17 @@
+{
+  "chapter": "Stack Operations - 1",
+  "questions": [
+    {
+      "question": "Process of inserting an element in stack is called ____________",
+      "options": ["Create", "Push", "Evaluation", "Pop"],
+      "answer": "Push",
+      "explanation": "Push operation allows users to insert elements in the stack."
+    },
+    {
+      "question": "Process of removing an element from stack is called __________",
+      "options": ["Create", "Push", "Evaluation", "Pop"],
+      "answer": "Pop",
+      "explanation": "Elements in the stack are removed using pop operation."
+    }
+  ]
+}

@@ -1,0 +1,1336 @@
+{
+    "chapter": "DSMCQ.pdf",
+    "questions": [
+        {
+            "question": "1. Process of inserting an element in stack is called ____________",
+            "options": [
+                "Create",
+                "Push",
+                "Evaluation",
+                "Pop"
+            ],
+            "answer": "b",
+            "explanation": "Push operation allows users to insert elements in the stack. If the stack is filled completely and trying to perform push operation stack – overflow can happen."
+        },
+        {
+            "question": "2. Process of removing an element from stack is called __________",
+            "options": [
+                "Create",
+                "Push",
+                "Evaluation",
+                "Pop"
+            ],
+            "answer": "d",
+            "explanation": "Elements in the stack are removed using pop operation. Pop operation removes the top most element in the stack i.e. last entered element."
+        },
+        {
+            "question": "3. In a stack, if a user tries to remove an element from an empty stack it is called _________",
+            "options": [
+                "Underflow",
+                "Empty collection",
+                "Overflow",
+                "Garbage Collection"
+            ],
+            "answer": "a",
+            "explanation": "Underflow occurs when the user performs a pop operation on an empty stack. Overflow occurs when the stack is full and the user performs a push operation. Garbage Collection is \nused to recover the memory occupied by objects that are no longer used."
+        },
+        {
+            "question": "4. Pushing an element into stack already having five elements and stack size of 5, then stack becomes ___________",
+            "options": [
+                "Overflow",
+                "Crash",
+                "Underflow",
+                "User flow"
+            ],
+            "answer": "a",
+            "explanation": "The stack is filled with 5 elements and pushing one more element causes a stack overflow. This results in overwriting memory, code and loss of unsaved work on the computer."
+        },
+        {
+            "question": "5. Entries in a stack are “ordered”. What is the meaning of this statement?",
+            "options": [
+                "A collection of stacks is sortable",
+                "Stack entries may be compared with the ‘<‘ operation",
+                "The entries are stored in a linked list",
+                "There is a Sequential entry that is one by one"
+            ],
+            "answer": "d",
+            "explanation": "In stack data structure, elements are added one by one using push operation. Stack follows LIFO Principle i.e. Last In First Out(LIFO). \nadvertisement"
+        },
+        {
+            "question": "6. Which of the following is not the application of stack?",
+            "options": [
+                "A parentheses balancing program",
+                "Tracking of local variables at run time",
+                "Compiler Syntax Analyzer",
+                "Data Transfer between two asynchronous process"
+            ],
+            "answer": "d",
+            "explanation": "Data transfer between the two asynchronous process uses the queue data structure for synchronisation. The rest are all stack applications."
+        },
+        {
+            "question": "7. Consider the usual algorithm for determining whether a sequence of parentheses is balanced. The maximum number of parentheses that appear on the stack AT ANY ONE TIME when the \nalgorithm analyzes: (()(())(()))?",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4 or more"
+            ],
+            "answer": "c",
+            "explanation": "In the entire parenthesis balancing method when the incoming token is a left parenthesis it is pushed into stack. A right parenthesis makes pop operation to delete the elements in \nstack till we get left parenthesis as top most element. 3 elements are there in stack before right parentheses comes. Therefore, maximum number of elements in stack at run time is 3."
+        },
+        {
+            "question": "8. Consider the usual algorithm for determining whether a sequence of parentheses is balanced. Suppose that you run the algorithm on a sequence that contains 2 left parentheses and 3 right \nparentheses (in some order). The maximum number of parentheses that appear on the stack AT ANY ONE TIME during the computation?",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4 or more"
+            ],
+            "answer": "b",
+            "explanation": "In the entire parenthesis balancing method when the incoming token is a left parenthesis it is pushed into stack. A right parenthesis makes pop operation to delete the elements in \nstack till we get left parenthesis as top most element. 2 left parenthesis are pushed whereas one right parenthesis removes one of left parenthesis. 2 elements are there before right parenthesis \nwhich is the maximum number of elements in stack at run time."
+        },
+        {
+            "question": "9. What is the value of the postfix expression 6 3 2 4 + – *?",
+            "options": [
+                "1",
+                "40",
+                "74",
+                "-18"
+            ],
+            "answer": "d",
+            "explanation": "Postfix Expression is (6*(3-(2+4))) which results -18 as output."
+        },
+        {
+            "question": "10. Here is an infix expression: 4 + 3*(6*3-12). Suppose that we are using the usual stack algorithm to convert the expression from infix to postfix notation. The maximum number of symbols \nthat will appear on the stack AT ONE TIME during the conversion of this expression?",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "answer": "d",
+            "explanation": "When we perform the conversion from infix to postfix expression +, *, (, * symbols are placed inside the stack. A maximum of 4 symbols are identified during the entire conversion. \n \n \nData Structure Questions and Answers – Stack Operations – 2 \nThis set of Data Structure Interview Questions and Answers focuses on “Stack Operations – 2”."
+        },
+        {
+            "question": "1. The postfix form of the expression (A+ B)*(C*D- E)*F / G is?",
+            "options": [
+                "AB+ CD*E – FG /**",
+                "AB + CD* E – F **G /",
+                "AB + CD* E – *F *G / d) AB + CDE * – * F *G / \n \nAnswer: c \nExplanation: (((A+ B)*(C*D- E)*F) / G) is converted to postfix expression as \n(AB+(*(C*D- E)*F )/ G) \n(AB+CD*E-*F) / G \n(AB+CD*E-*F * G/). Thus Postfix expression is AB+CD*E-*F*G/ \n2. The data structure required to check whether an expression contains a balanced parenthesis is? \na) Stack \nb) Queue \nc) Array",
+                "Tree"
+            ],
+            "answer": "a",
+            "explanation": "The stack is a simple data structure in which elements are added and removed based on the LIFO principle. Open parenthesis is pushed into the stack and a \nclosed parenthesis pops out elements till the top element of the stack is its corresponding open parenthesis. If the stack is empty, parenthesis is balanced otherwise it is \nunbalanced."
+        },
+        {
+            "question": "3. What data structure would you mostly likely see in non recursive implementation of a recursive algorithm?",
+            "options": [
+                "Linked List",
+                "Stack",
+                "Queue",
+                "Tree"
+            ],
+            "answer": "b",
+            "explanation": "In recursive algorithms, the order in which the recursive process comes back is the reverse of the order in which it goes forward during execution. The compiler \nuses the stack data structure to implement recursion. In the forwarding phase, the values of local variables, parameters and the return address are pushed into the stack at each \nrecursion level. In the backing-out phase, the stacked address is popped and used to execute the rest of the code."
+        },
+        {
+            "question": "4. The process of accessing data stored in a serial access memory is similar to manipulating data on a ________",
+            "options": [
+                "Heap",
+                "Binary Tree",
+                "Array",
+                "Stack"
+            ],
+            "answer": "d",
+            "explanation": "In serial access memory data records are stored one after the other in which they are created and are accessed sequentially. In stack data structure, elements are \naccessed sequentially. Stack data structure resembles the serial access memory."
+        },
+        {
+            "question": "5. The postfix form of A*B+C/D is?",
+            "options": [
+                "*AB/CD+",
+                "AB*CD/+",
+                "A*BC+/D",
+                "ABCD+/*"
+            ],
+            "answer": "b",
+            "explanation": "Infix expression is (A*B)+(C/D) \nAB*+(C/D) \nAB*CD/+. Thus postfix expression is AB*CD/+. \nadvertisement"
+        },
+        {
+            "question": "6. Which data structure is needed to convert infix notation to postfix notation?",
+            "options": [
+                "Branch",
+                "Tree",
+                "Queue",
+                "Stack"
+            ],
+            "answer": "d",
+            "explanation": "The Stack data structure is used to convert infix expression to postfix expression. The purpose of stack is to reverse the order of the operators in the expression. It \nalso serves as a storage structure, as no operator can be printed until both of its operands have appeared."
+        },
+        {
+            "question": "7. The prefix form of A-B/ (C * D ^ E) is?",
+            "options": [
+                "-/*^ACBDE",
+                "-ABCD*^DE",
+                "-A/B*C^DE",
+                "-A/BC*^DE"
+            ],
+            "answer": "c",
+            "explanation": "Infix Expression is (A-B)/(C*D^E) \n(-A/B)(C*D^E) \n-A/B*C^DE. Thus prefix expression is -A/B*C^DE."
+        },
+        {
+            "question": "8. What is the result of the following operation? \nTop (Push (S, X))",
+            "options": [
+                "X",
+                "X+S",
+                "S",
+                "XS"
+            ],
+            "answer": "a",
+            "explanation": "The function Push(S,X) pushes the value X in the stack S. Top() function gives the value which entered last. X entered into stack S at last."
+        },
+        {
+            "question": "9. The prefix form of an infix expression (p + q) – (r * t) is?",
+            "options": [
+                "+ pq – *rt",
+                "– +pqr * t",
+                "– +pq * rt",
+                "– + * pqrt"
+            ],
+            "answer": "c",
+            "explanation": "Given Infix Expression is ((p+q)-(r*t)) \n(+pq)-(r*t) \n(-+pq)(r*t) \n-+pq*rt. Thus prefix expression is -+pq*rt."
+        },
+        {
+            "question": "10. Which data structure is used for implementing recursion?",
+            "options": [
+                "Queue",
+                "Stack",
+                "Array",
+                "List"
+            ],
+            "answer": "b",
+            "explanation": "Stacks are used for the implementation of Recursion. Data Structure Questions and Answers – Queue Operations \nThis set of Data Structure Multiple Choice Questions & Answers (MCQs) focuses on “Queue Operations”."
+        },
+        {
+            "question": "1. A linear list of elements in which deletion can be done from one end (front) and insertion can take place only at the other end (rear) is known as _____________",
+            "options": [
+                "Queue",
+                "Stack",
+                "Tree",
+                "Linked list"
+            ],
+            "answer": "a",
+            "explanation": "Linear list of elements in which deletion is done at front side and insertion at rear side is called Queue. In stack we will delete the last entered element first."
+        },
+        {
+            "question": "2. The data structure required for Breadth First Traversal on a graph is?",
+            "options": [
+                "Stack",
+                "Array",
+                "Queue",
+                "Tree"
+            ],
+            "answer": "c",
+            "explanation": "In Breadth First Search Traversal, BFS, starting vertex is first taken and adjacent vertices which are unvisited are also taken. Again, the first vertex which was \nadded as an unvisited adjacent vertex list will be considered to add further unvisited vertices of the graph. To get the first unvisited vertex we need to follows First In First Out \nprinciple. Queue uses FIFO principle."
+        },
+        {
+            "question": "3. A queue follows __________",
+            "options": [
+                "FIFO (First In First Out) principle",
+                "LIFO (Last In First Out) principle",
+                "Ordered array",
+                "Linear tree"
+            ],
+            "answer": "a",
+            "explanation": "Element first added in queue will be deleted first which is FIFO principle."
+        },
+        {
+            "question": "4. Circular Queue is also known as ________",
+            "options": [
+                "Ring Buffer",
+                "Square Buffer",
+                "Rectangle Buffer",
+                "Curve Buffer"
+            ],
+            "answer": "a",
+            "explanation": "Circular Queue is also called as Ring Buffer. Circular Queue is a linear data structure in which last position is connected back to the first position to make a circle. It \nforms a ring structure. \nadvertisement"
+        },
+        {
+            "question": "5. If the elements “A”, “B”, “C” and “D” are placed in a queue and are deleted one at a time, in what order will they be removed?",
+            "options": [
+                "ABCD",
+                "DCBA",
+                "DCAB",
+                "ABDC"
+            ],
+            "answer": "a",
+            "explanation": "Queue follows FIFO approach. i.e. First in First Out Approach. So, the order of removal elements are ABCD."
+        },
+        {
+            "question": "6. A data structure in which elements can be inserted or deleted at/from both ends but not in the middle is?",
+            "options": [
+                "Queue",
+                "Circular queue",
+                "Dequeue",
+                "Priority queue"
+            ],
+            "answer": "c",
+            "explanation": "In dequeuer, we can insert or delete elements from both the ends. In queue, we will follow first in first out principle for insertion and deletion of elements. Element \nwith least priority will be deleted in a priority queue."
+        },
+        {
+            "question": "7. A normal queue, if implemented using an array of size MAX_SIZE, gets full when?",
+            "options": [
+                "Rear = MAX_SIZE – 1",
+                "Front = (rear + 1)mod MAX_SIZE",
+                "Front = rear + 1",
+                "Rear = front"
+            ],
+            "answer": "a",
+            "explanation": "When Rear = MAX_SIZE – 1, there will be no space left for the elements to be added in queue. Thus queue becomes full."
+        },
+        {
+            "question": "8. Queues serve major role in ______________",
+            "options": [
+                "Simulation of recursion",
+                "Simulation of arbitrary linked list",
+                "Simulation of limited resource allocation",
+                "Simulation of heap sort"
+            ],
+            "answer": "c",
+            "explanation": "Simulation of recursion uses stack data structure. Simulation of arbitrary linked lists uses linked lists. Simulation of resource allocation uses queue as first entered \ndata needs to be given first priority during resource allocation. Simulation of heap sort uses heap data structure."
+        },
+        {
+            "question": "9. Which of the following is not the type of queue?",
+            "options": [
+                "Ordinary queue",
+                "Single ended queue",
+                "Circular queue",
+                "Priority queue"
+            ],
+            "answer": "b",
+            "explanation": "Queue always has two ends. So, single ended queue is not the type of queue. \nData Structure Questions and Answers – Singly Linked List Operations – 1 \nThis set of Data Structure Interview Questions & Answers focuses on “Singly Linked List Operations – 1”."
+        },
+        {
+            "question": "1. A linear collection of data elements where the linear node is given by means of pointer is called?",
+            "options": [
+                "Linked list",
+                "Node list",
+                "Primitive list",
+                "Unordered list"
+            ],
+            "answer": "a",
+            "explanation": "In Linked list each node has its own data and the address of next node. These nodes are linked by using pointers. Node list is an object that consists of a list of all \nnodes in a document with in a particular selected set of nodes. 2. Consider an implementation of unsorted singly linked list. Suppose it has its representation with a head pointer only. Given the representation, which of the following \noperation can be implemented in O(1) time? \ni) Insertion at the front of the linked list \nii) Insertion at the end of the linked list \niii) Deletion of the front node of the linked list \niv) Deletion of the last node of the linked list \na) I and II \nb) I and III \nc) I, II and III \nd) I, II and IV \n \nAnswer: b \nExplanation: We know the head node in the given linked list. Insertion and deletion of elements at the front of the linked list completes in O (1) time whereas for insertion and \ndeletion at the last node requires to traverse through every node in the linked list. Suppose there are n elements in a linked list, we need to traverse through each node. Hence \ntime complexity becomes O(n)."
+        },
+        {
+            "question": "3. In linked list each node contains a minimum of two fields. One field is data field to store the data second field is?",
+            "options": [
+                "Pointer to character",
+                "Pointer to integer",
+                "Pointer to node",
+                "Node"
+            ],
+            "answer": "c",
+            "explanation": "Each node in a linked list contains data and a pointer (reference) to the next node. Second field contains pointer to node. \nadvertisement"
+        },
+        {
+            "question": "4. What would be the asymptotic time complexity to add a node at the end of singly linked list, if the pointer is initially pointing to the head of the list?",
+            "options": [
+                "O(1)",
+                "O(n)",
+                "θ(n)",
+                "θ(1)"
+            ],
+            "answer": "c",
+            "explanation": "In case of a linked list having n elements, we need to travel through every node of the list to add the element at the end of the list. Thus asymptotic time complexity \nis θ(n)."
+        },
+        {
+            "question": "5. What would be the asymptotic time complexity to insert an element at the front of the linked list (head is known)?",
+            "options": [
+                "O(1)",
+                "O(n)",
+                "O(n2)",
+                "O(n3)"
+            ],
+            "answer": "a",
+            "explanation": "To add an element at the front of the linked list, we will create a new node which holds the data to be added to the linked list and pointer which points to head \nposition in the linked list. The entire thing happens within O (1) time. Thus the asymptotic time complexity is O (1)."
+        },
+        {
+            "question": "6. What would be the asymptotic time complexity to find an element in the linked list?",
+            "options": [
+                "O(1)",
+                "O(n)",
+                "O(n2)",
+                "O(n4)"
+            ],
+            "answer": "b",
+            "explanation": "If the required element is in the last position, we need to traverse the entire linked list. This will take O (n) time to search the element."
+        },
+        {
+            "question": "7. What would be the asymptotic time complexity to insert an element at the second position in the linked list?",
+            "options": [
+                "O(1)",
+                "O(n)",
+                "O(n2)",
+                "O(n3)"
+            ],
+            "answer": "a",
+            "explanation": "A new node is created with the required element. The pointer of the new node points the node to which the head node of the linked list is also pointing. The head \nnode pointer is changed and it points to the new node which we created earlier. The entire process completes in O (1) time. Thus the asymptotic time complexity to insert an \nelement in the second position of the linked list is O (1)."
+        },
+        {
+            "question": "8. The concatenation of two lists can be performed in O(1) time. Which of the following variation of the linked list can be used?",
+            "options": [
+                "Singly linked list",
+                "Doubly linked list",
+                "Circular doubly linked list",
+                "Array implementation of list"
+            ],
+            "answer": "c",
+            "explanation": "We can easily concatenate two lists in O (1) time using singly or doubly linked list, provided that we have a pointer to the last node at least one of the lists. But in \ncase of circular doubly linked lists, we will break the link in both the lists and hook them together. Thus circular doubly linked list concatenates two lists in O (1) time."
+        },
+        {
+            "question": "9. Consider the following definition in c programming language. \nstruct node \n{ \n    int data; \n    struct node * next; \n} \ntypedef struct node NODE ; \nNODE *ptr; \nWhich of the following c code is used to create new node?",
+            "options": [
+                "ptr = (NODE*)malloc(sizeof(NODE));",
+                "ptr = (NODE*)malloc(NODE);",
+                "ptr = (NODE*)malloc(sizeof(NODE*));",
+                "ptr = (NODE)malloc(sizeof(NODE));"
+            ],
+            "answer": "a",
+            "explanation": "As it represents the right way to create a node. \n Data Structure Questions and Answers – Singly Linked List Operations – 2 \nThis set of Data Structure Interview Questions and Answers for freshers focuses on “Singly Linked Lists Operations – 2”."
+        },
+        {
+            "question": "1. What kind of linked list is best to answer questions like “What is the item at position n?”",
+            "options": [
+                "Singly linked list",
+                "Doubly linked list",
+                "Circular linked list",
+                "Array implementation of linked list"
+            ],
+            "answer": "d",
+            "explanation": "Arrays provide random access to elements by providing the index value within square brackets. In the linked list, we need to traverse through each element until \nwe reach the nth position. Time taken to access an element represented in arrays is less than the singly, doubly and circular linked lists. Thus, array implementation is used to \naccess the item at the position n."
+        },
+        {
+            "question": "2. Linked lists are not suitable for the implementation of ___________",
+            "options": [
+                "Insertion sort",
+                "Radix sort",
+                "Polynomial manipulation",
+                "Binary search"
+            ],
+            "answer": "d",
+            "explanation": "It cannot be implemented using linked lists."
+        },
+        {
+            "question": "3. Linked list is considered as an example of ___________ type of memory allocation.",
+            "options": [
+                "Dynamic",
+                "Static",
+                "Compile time",
+                "Heap"
+            ],
+            "answer": "a",
+            "explanation": "As memory is allocated at the run time."
+        },
+        {
+            "question": "4. In Linked List implementation, a node carries information regarding ___________",
+            "options": [
+                "Data",
+                "Link",
+                "Data and Link",
+                "Node"
+            ],
+            "answer": "b",
+            "explanation": "A linked list is a collection of objects linked together by references from an object to another object. By convention these objects are names as nodes. Linked list \nconsists of nodes where each node contains one or more data fields and a reference(link) to the next node."
+        },
+        {
+            "question": "5. Linked list data structure offers considerable saving in _____________",
+            "options": [
+                "Computational Time",
+                "Space Utilization",
+                "Space Utilization and Computational Time",
+                "Speed Utilization"
+            ],
+            "answer": "c",
+            "explanation": "Linked lists saves both space and time. \nadvertisement"
+        },
+        {
+            "question": "6. Which of the following points is/are not true about Linked List data structure when it is compared with an array?",
+            "options": [
+                "Arrays have better cache locality that can make them better in terms of performance",
+                "It is easy to insert and delete elements in Linked List",
+                "Random access is not allowed in a typical implementation of Linked Lists",
+                "Access of elements in linked list takes less time than compared to arrays"
+            ],
+            "answer": "d",
+            "explanation": "To access an element in a linked list, we need to traverse every element until we reach the desired element. This will take more time than arrays as arrays provide \nrandom access to its elements."
+        },
+        {
+            "question": "7. What does the following function do for a given Linked List with first node as head? \nvoid fun1(struct node * head) \n{ \n    if(head == NULL) \n    return; \n    fun1 (head->next); \n    printf (\"%d  \", head->data); \n}",
+            "options": [
+                "Prints all nodes of linked lists",
+                "Prints all nodes of linked list in reverse order",
+                "Prints alternate nodes of Linked List",
+                "Prints alternate nodes in reverse order"
+            ],
+            "answer": "b",
+            "explanation": "fun1() prints the given Linked List in reverse manner. \nFor Linked List 1->2->3->4->5, fun1() prints 5->4->3->2->1."
+        },
+        {
+            "question": "8. Which of the following sorting algorithms can be used to sort a random linked list with minimum time complexity?",
+            "options": [
+                "Insertion Sort",
+                "Quick Sort",
+                "Heap Sort",
+                "Merge Sort"
+            ],
+            "answer": "d",
+            "explanation": "Both Merge sort and Insertion sort can be used for linked lists. The slow random-access performance of a linked list makes other algorithms (such as quicksort) \nperform poorly, and others (such as heapsort) completely impossible. Since worst case time complexity of Merge Sort is O(nLogn) and Insertion sort is O(n2), merge sort is \npreferred. \nInfix to Prefix Conversion Multiple Choice Questions and Answers (MCQs) \nThis set of Data Structures & Algorithms Multiple Choice Questions & Answers (MCQs) focuses on “Infix to Prefix Conversion”."
+        },
+        {
+            "question": "1. What data structure is used when converting an infix notation to prefix notation?",
+            "options": [
+                "Stack",
+                "Queue",
+                "B-Trees d) Linked-list \n \nAnswer: a \nExplanation: First you reverse the given equation and carry out the algorithm of infix to postfix expression. Here, the data structure used is stacks. \n2. What would be the Prefix notation for the given equation? \nA+(B*C) \na) +A*CB \nb) *B+AC \nc) +A*BC",
+                "*A+CB"
+            ],
+            "answer": "c",
+            "explanation": "Reverse the equation or scan the equation from right to left. Apply the infix-postfix algorithm. The equation inside the bracket evaluates to CB* and outside the \nbracket evaluates to A+ therefore getting CB*A+. Reversing this and we get +A*BC."
+        },
+        {
+            "question": "3. What would be the Prefix notation for the given equation? \n(A*B)+(C*D)",
+            "options": [
+                "+*AB*CD",
+                "*+AB*CD",
+                "**AB+CD",
+                "+*BA*CD"
+            ],
+            "answer": "a",
+            "explanation": "Reverse the equation or scan the equation from right to left. Apply the infix-postfix algorithm. The equation inside the brackets evaluate to DC* and BA* \nrespectively giving us DC*BA*+ in the end. Reversing this we get the +*AB*CD. \nadvertisement"
+        },
+        {
+            "question": "4. What would be the Prefix notation for the given equation? \nA+B*C^D",
+            "options": [
+                "+A*B^CD",
+                "+A^B*CD",
+                "*A+B^CD",
+                "^A*B+CD"
+            ],
+            "answer": "a",
+            "explanation": "Reverse the equation or scan the equation from right to left. Apply the infix-prefix algorithm. The preference order in ascending order are as follows +*^. Operators \nare pushed into the stack and popped if its preference is greater than the one which is getting pushed. In the end all operators are popped. The equation evaluates to DC^B*A+. \nReversing this we get our following answer."
+        },
+        {
+            "question": "5. Out of the following operators (^, *, +, &, $), the one having highest priority is _________",
+            "options": [
+                "+",
+                "$",
+                "^",
+                "&"
+            ],
+            "answer": "c",
+            "explanation": "According to the algorithm (infix-prefix), it follows that the exponentiation will have the highest priority."
+        },
+        {
+            "question": "6. Out of the following operators (|, *, +, &, $), the one having lowest priority is ________",
+            "options": [
+                "+",
+                "$",
+                "|",
+                "&"
+            ],
+            "answer": "c",
+            "explanation": "According to the algorithm (infix-prefix), it follows that the logical OR will have the lowest priority."
+        },
+        {
+            "question": "7. What would be the Prefix notation for the given equation? \nA^B^C^D",
+            "options": [
+                "^^^ABCD",
+                "^A^B^CD",
+                "ABCD^^^",
+                "AB^C^D"
+            ],
+            "answer": "a",
+            "explanation": "Reverse the equation or scan the equation from right to left. Apply the infix-prefix algorithm. Here we have to remember that the exponentiation has order of \nassociativity from right to left. Therefore the stack goes on pushing ^. Therefore resulting in ^^^ABCD."
+        },
+        {
+            "question": "8. What would be the Prefix notation for the given equation? \na+b-c/d&e|f",
+            "options": [
+                "|&-+ab/cdef",
+                "&|-+ab/cdef",
+                "|&-ab+/cdef",
+                "|&-+/abcdef"
+            ],
+            "answer": "a",
+            "explanation": "Reverse the equation or scan the equation from right to left. Apply the infix-prefix algorithm. The preference order in ascending order are as follows |&+*/."
+        },
+        {
+            "question": "9. What would be the Prefix notation for the given equation? \n(a+(b/c)*(d^e)-f)",
+            "options": [
+                "-+a*/^bcdef",
+                "-+a*/bc^def",
+                "-+a*b/c^def",
+                "-a+*/bc^def"
+            ],
+            "answer": "b",
+            "explanation": "Reverse the equation or scan the equation from right to left. Apply the infix-prefix algorithm. The preference order in ascending order are as follows +*/^. Brackets \nhave the highest priority. The equations inside the brackets are solved first."
+        },
+        {
+            "question": "10. What would be the Prefix notation and Postfix notation for the given equation? \nA+B+C",
+            "options": [
+                "++ABC and AB+C+",
+                "AB+C+ and ++ABC",
+                "ABC++ and AB+C+",
+                "ABC+ and ABC+"
+            ],
+            "answer": "a",
+            "explanation": "For prefix notation there is a need of reversing the giving equation and solving it as a normal infix-postfix question. We see that it doesn’t result as same as normal \ninfix-postfix conversion."
+        },
+        {
+            "question": "11. What would be the Prefix notation for the given equation? \na|b&c",
+            "options": [
+                "a|&bc",
+                "&|abc",
+                "|a&bc",
+                "ab&|c"
+            ],
+            "answer": "c",
+            "explanation": "The order of preference of operators is as follows (descending): & |. \nThe equation a|b&c will be parenthesized as (a|(b&c))  for evaluation. \nTherefore the equation for prefix notation evaluates to |a&bc. \nInfix to Postfix Conversion Multiple Choice Questions and Answers (MCQs) \nThis set of Data Structures & Algorithms Multiple Choice Questions & Answers (MCQs) focuses on “Infix to Postfix Conversion”."
+        },
+        {
+            "question": "1. When an operand is read, which of the following is done?",
+            "options": [
+                "It is placed on to the output",
+                "It is placed in operator stack",
+                "It is ignored",
+                "Operator stack is emptied"
+            ],
+            "answer": "a",
+            "explanation": "While converting an infix expression to a postfix expression, when an operand is read, it is placed on to the output. When an operator is read, it is placed in the \noperator stack."
+        },
+        {
+            "question": "2. What should be done when a left parenthesis ‘(‘ is encountered?",
+            "options": [
+                "It is ignored",
+                "It is placed in the output",
+                "It is placed in the operator stack",
+                "The contents of the operator stack is emptied"
+            ],
+            "answer": "c",
+            "explanation": "When a left parenthesis is encountered, it is placed on to the operator stack. When the corresponding right parenthesis is encountered, the stack is popped until \nthe left parenthesis and remove both the parenthesis."
+        },
+        {
+            "question": "3. Which of the following is an infix expression?",
+            "options": [
+                "(a+b)*(c+d)",
+                "ab+c*",
+                "+ab",
+                "abc+*"
+            ],
+            "answer": "a",
+            "explanation": "(a+b)*(c+d) is an infix expression. +ab is a prefix expression and ab+c* is a postfix expression."
+        },
+        {
+            "question": "4. What is the time complexity of an infix to postfix conversion algorithm?",
+            "options": [
+                "O(N log N)",
+                "O(N)",
+                "O(N2)",
+                "O(M log N)"
+            ],
+            "answer": "b",
+            "explanation": "The time complexity of an infix to postfix expression conversion algorithm is mathematically found to be O(N)."
+        },
+        {
+            "question": "5.What is the postfix expression for the corresponding infix expression? \na+b*c+(d*e)",
+            "options": [
+                "abc*+de*+",
+                "abc+*de*+",
+                "a+bc*de+*",
+                "abc*+(de)*+"
+            ],
+            "answer": "a",
+            "explanation": "Using the infix to postfix expression conversion algorithm, the corresponding postfix expression is found to be abc*+de*+. \nadvertisement"
+        },
+        {
+            "question": "6. Parentheses are simply ignored in the conversion of infix to postfix expression.",
+            "options": [
+                "True",
+                "False \n \nAnswer: b \nExplanation: When a parenthesis is encountered, it is placed on the operator stack. When the corresponding parenthesis is encountered, the stack is popped until the other \nparenthesis is reached and they are discarded. \n7. It is easier for a computer to process a postfix expression than an infix expression. \na) True \nb) False \n \nAnswer: a \nExplanation: Computers can easily process a postfix expression because a postfix expression keeps track of precedence of operators. \n8. What is the postfix expression for the infix expression? \na-b-c \na) -ab-c \nb) ab – c –",
+                "– -abc",
+                "-ab-c"
+            ],
+            "answer": "b",
+            "explanation": "The corresponding postfix expression for the given infix expression is found to be ab-c- and not abc- -."
+        },
+        {
+            "question": "9. What is the postfix expression for the following infix expression? \na/b^c-d",
+            "options": [
+                "abc^/d-",
+                "ab/cd^-",
+                "ab/^cd-",
+                "abcd^/-"
+            ],
+            "answer": "a",
+            "explanation": "Using the infix to postfix conversion algorithm, the corresponding postfix expression for the infix expression i"
+        },
+        {
+            "question": "10. Which of the following statement is incorrect with respect to infix to postfix conversion algorithm?",
+            "options": [
+                "operand is always placed in the output",
+                "operator is placed in the stack when the stack operator has lower precedence",
+                "parenthesis are included in the output",
+                "higher and equal priority operators follow the same condition"
+            ],
+            "answer": "c",
+            "explanation": "Parentheses are not included in the output. They are placed in the operator stack and then discarded."
+        },
+        {
+            "question": "11. In infix to postfix con version algorithm, the operators are associated from?",
+            "options": [
+                "right to left",
+                "left to right",
+                "centre to left",
+                "centre to right"
+            ],
+            "answer": "b",
+            "explanation": "In infix, prefix and postfix expressions, the operators are associated from left to right and no"
+        },
+        {
+            "question": "12. What is the corresponding postfix expression for the given infix expression?\na*(b+c)/d",
+            "options": [
+                "ab*+cd/",
+                "ab+*cd/",
+                "abc*+/d",
+                "abc+*d/"
+            ],
+            "answer": "d",
+            "explanation": "Using the infix to postfix conversion algorithm, the corresponding po"
+        },
+        {
+            "question": "13. What is the corresponding postfix expression for the given infix expression?\na+(b*c(d/e^f)*g)*h)",
+            "options": [
+                "ab*cdef/^*g-h+",
+                "abcdef^/*g*h*+",
+                "abcd*^ed/g*-h*+",
+                "abc*de^fg/*-*h+"
+            ],
+            "answer": "b",
+            "explanation": "Using the infix to postfix expression conversion algorithm using stack, the corresponding postfix expression is"
+        },
+        {
+            "question": "14. What is the correct postfix expression for the following expression?\na+b*(c^d-e)^(f+g*h)-i",
+            "options": [
+                "abc^de-fg+*^*+i-",
+                "abcde^-fg*+*^h*+i-",
+                "abcd^e-fgh*+^*+i-",
+                "ab^-dc*+ef^gh*+i-"
+            ],
+            "answer": "c",
+            "explanation": "The postfix expression for the given infix expression is found to be abcd^e"
+        },
+        {
+            "question": "15. From the given Expression tree, identify the correct postfix expression from the list of options.",
+            "options": [
+                "ab*cd*+",
+                "ab*cd-+",
+                "abcd-*+",
+                "ab*+cd-"
+            ],
+            "answer": "b",
+            "explanation": "From the given expression tree, the infix expression is found to be (\n \nData Structure Questions and Answers \nThis set of Data Structures & Algorithms Multiple Choice Questions & Answers (MCQs) focuses on “Queue using Stacks”."
+        },
+        {
+            "question": "1. A Double-ended queue su pports operations such as adding and removing items from both the sides of the queue. They support four operations like addFr\ntop of the queue), addRear(adding item to the bottom of the queue), removeFront(removing item from the top of th\nthe queue). You are given only stacks to implement this data structure. You can implement only push and pop operations. What \noperation?(you can reuse the stack)",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "answer": "b",
+            "explanation": "The addFront and removeFront operations can be performed using one stack itself as push and pop are supported (a\nstack) but to perform addRear and r emoveRear you need to pop each element from the current stack and push it into another stack, push or pop the element as per \noperation from this stack and in the end pop elements from this stack to the first stack."
+        },
+        {
+            "question": "2. You are asked to perform a q ueue operation using a stack. Assume the size of the stack is some value ‘n’ and there are ‘m’ number of variables in this st\ncomplexity of performing deQueue operation is (Using only stack operations like push and pop)(Tightly bound).",
+            "options": [
+                "O(m) \nExplanation: Using the infix to postfix conversion algorithm, the corresponding postfix expression for the infix expression i s found to be abc^/d-. \n10. Which of the following statement is incorrect with respect to infix to postfix conversion algorithm?",
+                "operator is placed in the stack when the stack operator has lower precedence  \nd) higher and equal priority operators follow the same condition  \nExplanation: Parentheses are not included in the output. They are placed in the operator stack and then discarded.  \nversion algorithm, the operators are associated from?  \nExplanation: In infix, prefix and postfix expressions, the operators are associated from left to right and no t right to left. \n12. What is the corresponding postfix expression for the given infix expression?  \nExplanation: Using the infix to postfix conversion algorithm, the corresponding po stfix expression is obtained as abc+*d/. \n13. What is the corresponding postfix expression for the given infix expression?  \nExplanation: Using the infix to postfix expression conversion algorithm using stack, the corresponding postfix expression is found to be abcdef^/*g*h*+.\n14. What is the correct postfix expression for the following expression?  \nExplanation: The postfix expression for the given infix expression is found to be abcd^e -fgh*+^*+i- when we use infix to postfix conversion algorithm.\nm the given Expression tree, identify the correct postfix expression from the list of options.  \n \nExplanation: From the given expression tree, the infix expression is found to be ( a*b)+(c-d). Converting it to postfix, we get, ab*cd-+. \nData Structure Questions and Answers – Queue using Stacks \nThis set of Data Structures & Algorithms Multiple Choice Questions & Answers (MCQs) focuses on “Queue using Stacks”.  \npports operations such as adding and removing items from both the sides of the queue. They support four operations like addFr\ntop of the queue), addRear(adding item to the bottom of the queue), removeFront(removing item from the top of th e queue) and removeRear(removing item from the bottom of \nthe queue). You are given only stacks to implement this data structure. You can implement only push and pop operations. What are the total number of stacks required for this \nExplanation: The addFront and removeFront operations can be performed using one stack itself as push and pop are supported (a dding and removing element from top of the \nemoveRear you need to pop each element from the current stack and push it into another stack, push or pop the element as per \noperation from this stack and in the end pop elements from this stack to the first stack.  \nueue operation using a stack. Assume the size of the stack is some value ‘n’ and there are ‘m’ number of variables in this st\ncomplexity of performing deQueue operation is (Using only stack operations like push and pop)(Tightly bound).  \nfound to be abcdef^/*g*h*+.  \nwhen we use infix to postfix conversion algorithm.  \npports operations such as adding and removing items from both the sides of the queue. They support four operations like addFr ont(adding item to \ne queue) and removeRear(removing item from the bottom of \nare the total number of stacks required for this \ndding and removing element from top of the \nemoveRear you need to pop each element from the current stack and push it into another stack, push or pop the element as per the asked \nueue operation using a stack. Assume the size of the stack is some value ‘n’ and there are ‘m’ number of variables in this st ack. The time b) O(n)",
+                "O(m*n)",
+                "Data is insufficient"
+            ],
+            "answer": "a",
+            "explanation": "To perform deQueue operation you need to pop each element from the first stack and push it into the second stack. In this case you need to pop ‘m’ times and \nneed to perform push operations also ‘m’ times. Then you pop the first element from this second stack (constant time) and pass all the elements to the first stack (as done in the \nbeginning)(‘m-1’ times). Therfore the time complexity is O(m)."
+        },
+        {
+            "question": "3. Consider you have an array of some random size. You need to perform dequeue operation. You can perform it using stack operation (push and pop) or using queue \noperations itself (enQueue and Dequeue). The output is guaranteed to be same. Find some differences?",
+            "options": [
+                "They will have different time complexities",
+                "The memory used will not be different",
+                "There are chances that output might be different",
+                "No differences"
+            ],
+            "answer": "a",
+            "explanation": "To perform operations such as Dequeue using stack operation you need to empty all the elements from the current stack and push it into the next stack, resulting \nin a O(number of elements) complexity whereas the time complexity of dequeue operation itself is O(1). And there is a need of a extra stack. Therefore more memory is needed."
+        },
+        {
+            "question": "4. Consider you have a stack whose elements in it are as follows. \n5 4 3 2 << top \nWhere the top element is 2. \nYou need to get the following stack \n6 5 4 3 2 << top \nThe operations that needed to be performed are (You can perform only push and pop):",
+            "options": [
+                "Push(pop()), push(6), push(pop())",
+                "Push(pop()), push(6)",
+                "Push(pop()), push(pop()), push(6)",
+                "Push(6)"
+            ],
+            "answer": "a",
+            "explanation": "By performing push(pop()) on all elements on the current stack to the next stack you get 2 3 4 5 << top.Push(6) and perform push(pop()) you’ll get back 6 5 4 3 2 \n<< top. You have actually performed enQueue operation using push and pop."
+        },
+        {
+            "question": "5. A double-ended queue supports operations like adding and removing items from both the sides of the queue. They support four operations like addFront(adding item to top of \nthe queue), addRear(adding item to the bottom of the queue), removeFront(removing item from the top of the queue) and removeRear(removing item from the bottom of the \nqueue). You are given only stacks to implement this data structure. You can implement only push and pop operations. What’s the time complexity of performing addFront and \naddRear? (Assume ‘m’ to be the size of the stack and ‘n’ to be the number of elements)",
+            "options": [
+                "O(m) and O(n)",
+                "O(1) and O(n)",
+                "O(n) and O(1)",
+                "O(n) and O(m)"
+            ],
+            "answer": "b",
+            "explanation": "addFront is just a normal push operation. Push operation is of O(1). Whereas addRear is of O(n) as it requires two push(pop()) operations of all elements of a \nstack. \nadvertisement"
+        },
+        {
+            "question": "6. Why is implementation of stack operations on queues not feasible for a large dataset (Asssume the number of elements in the stack to be n)?",
+            "options": [
+                "Because of its time complexity O(n)",
+                "Because of its time complexity O(log(n))",
+                "Extra memory is not required",
+                "There are no problems"
+            ],
+            "answer": "a",
+            "explanation": "To perform Queue operations such as enQueue and deQueue there is a need of emptying all the elements of a current stack and pushing elements into the next \nstack and vice versa. Therfore it has a time complexity of O(n) and the need of extra stack as well, may not be feasible for a large dataset."
+        },
+        {
+            "question": "7. Consider yourself to be in a planet where the computational power of chips to be slow. You have an array of size 10.You want to perform enqueue some element into this \narray. But you can perform only push and pop operations .Push and pop operation both take 1 sec respectively. The total time required to perform enQueue operation is?",
+            "options": [
+                "20",
+                "40",
+                "42",
+                "43"
+            ],
+            "answer": "d",
+            "explanation": "First you have to empty all the elements of the current stack into the temporary stack, push the required element and empty the elements of the temporary stack \ninto the original stack. Therfore taking 10+10+1+11+11= 43 seconds."
+        },
+        {
+            "question": "8. You have two jars, one jar which has 10 rings and the other has none. They are placed one above the other. You want to remove the last ring in the jar. And the second jar is \nweak and cannot be used to store rings for a long time.",
+            "options": [
+                "Empty the first jar by removing it one by one from the first jar and placing it into the second jar",
+                "Empty the first jar by removing it one by one from the first jar and placing it into the second jar and empty the second jar by placing all the rings into the first jar one by one",
+                "There exists no possible way to do this",
+                "Break the jar and remove the last one"
+            ],
+            "answer": "b",
+            "explanation": "This is similar to performing dequeue operation using push and pop only. Elements in the first jar are taken out and placed in the second jar. After removing the last \nelement from the first jar, remove all the elements in the second jar and place them in the first jar."
+        },
+        {
+            "question": "9. Given only a single array of size 10 and no other memory is available. Which of the following operation is not feasible to implement (Given only push and pop operation)?",
+            "options": [
+                "Push",
+                "Pop",
+                "Enqueue",
+                "Returntop"
+            ],
+            "answer": "c",
+            "explanation": "To perform Enqueue using just push and pop operations, there is a need of another array of same size. But as there is no extra available memeory, the given \noperation is not feasible."
+        },
+        {
+            "question": "10. Given an array of size n, let’s assume an element is ‘touched’ if and only if some operation is performed on it(for example, for performing a pop operation the top element is \n‘touched’). Now you need to perform Dequeue operation. Each element in the array is touched atleast?",
+            "options": [
+                "Once",
+                "Twice",
+                "Thrice",
+                "Four times"
+            ],
+            "answer": "d",
+            "explanation": "First each element from the first stack is popped, then pushed into the second stack, dequeue operation is done on the top of the stack and later the each element \nof second stack is popped then pushed into the first stack. Therfore each element is touched four times. B-Tree Multiple Choice Questions and Answers (MCQs) \nThis set of Data Structures & Algorithms Multiple Choice Questions & Answers (MCQs) focuses on “B-Tree”."
+        },
+        {
+            "question": "1. Which of the following is the most widely used external memory data structure?",
+            "options": [
+                "AVL tree",
+                "B-tree",
+                "Red-black tree",
+                "Both AVL tree and Red-black tree"
+            ],
+            "answer": "b",
+            "explanation": "In external memory, the data is transferred in form of blocks. These blocks have data valued and pointers. And B-tree can hold both the data values and pointers. \nSo B-tree is used as an external memory data structure."
+        },
+        {
+            "question": "2. B-tree of order n is a order-n multiway tree in which each non-root node contains __________",
+            "options": [
+                "at most (n – 1)/2 keys",
+                "exact (n – 1)/2 keys",
+                "at least 2n keys",
+                "at least (n – 1)/2 keys"
+            ],
+            "answer": "d",
+            "explanation": "A non-root node in a B-tree of order n contains at least (n – 1)/2 keys. And contains a maximum of (n – 1) keys and n sons."
+        },
+        {
+            "question": "3. A B-tree of order 4 and of height 3 will have a maximum of _______ keys.",
+            "options": [
+                "255",
+                "63",
+                "127",
+                "188"
+            ],
+            "answer": "a",
+            "explanation": "A B-tree of order m of height h will have the maximum number of keys when all nodes are completely filled. So, the B-tree will have n = (mh+1 – 1) keys in this \nsituation. So, required number of maximum keys = 43+1 – 1 = 256 – 1 = 255."
+        },
+        {
+            "question": "4. Five node splitting operations occurred when an entry is inserted into a B-tree. Then how many nodes are written?",
+            "options": [
+                "14",
+                "7",
+                "11",
+                "5"
+            ],
+            "answer": "c",
+            "explanation": "If s splits occur in a B-tree, 2s + 1 nodes are written (2 halves of each split and the parent of the last node split). So, if 5 splits occurred, then 2 * 5 + 1, i.e. 11 nodes \nare written."
+        },
+        {
+            "question": "5. B-tree and AVL tree have the same worst case time complexity for insertion and deletion.",
+            "options": [
+                "True",
+                "False \n \nAnswer: a \nExplanation: Both the B-tree and the AVL tree have O(log n) as worst case time complexity for insertion and deletion. \nadvertisement \n6. 2-3-4 trees are B-trees of order 4. They are an isometric of _____ trees. \na) AVL \nb) AA",
+                "2-3",
+                "Red-Black"
+            ],
+            "answer": "d",
+            "explanation": "2-3-4 trees are isometric of Red-Black trees. It means that, for every 2-3-4 tree, there exists a Red-Black tree with data elements in the same order."
+        },
+        {
+            "question": "7. Figure shown below is B-tree of order 5. What is the result of deleting 130 from the tree?",
+            "options": [
+                "b)  \nc)  \nd)  \n \nAnswer: c \nExplanation: Each non-root in a B-tree of order 5 must contain at least 2 keys. Here, when the key 130 is deleted the node gets underflowed i.e. number of keys in the node \ndrops below 2. So we combine the node with key 110 with it’s brother node having keys 144 and 156. And this combined node will also contain the separator key from parent \ni.e. key 140, leaving the root with two keys 110 and 160. \n8. What is the best case height of a B-tree of order n and which has k keys? \na) logn (k+1) – 1",
+                "nk",
+                "log k (n+1) – 1",
+                "klog n"
+            ],
+            "answer": "a",
+            "explanation": "B-tree of order n and with height k has best case height h, where h = logn (k+1) – 1. The best case occurs when all the nodes are completely filled with keys."
+        },
+        {
+            "question": "9. Compression techniques can be used on the keys to reduce both space and time requirements in a B-tree.",
+            "options": [
+                "True",
+                "False \n \nAnswer: a \nExplanation: The front compression and the rear compression are techniques used to reduce space and time requirements in B-tree. The compression enables to retain more \nkeys in a node so that the number of nodes needed can be reduced. \n10. Which of the following is true? \na) larger the order of B-tree, less frequently the split occurs \nb) larger the order of B-tree, more frequently the split occurs",
+                "smaller the order of B-tree, more frequently the split occurs",
+                "smaller the order of B-tree, less frequently the split occurs"
+            ],
+            "answer": "a",
+            "explanation": ""
+        },
+        {
+            "question": "1. How many children does a binary tree have?",
+            "options": [
+                "2",
+                "any number of children",
+                "0 or 1 or 2",
+                "0 or 1"
+            ],
+            "answer": "c",
+            "explanation": "Can have atmost 2 nodes."
+        },
+        {
+            "question": "2. What is/are the disadvantages of implementing tree using normal arrays?",
+            "options": [
+                "difficulty in knowing children nodes of a node",
+                "difficult in finding the parent of a node",
+                "have to know the maximum number of nodes possible before creation of trees",
+                "difficult to implement"
+            ],
+            "answer": "c",
+            "explanation": "The size of array is fixed in normal arrays. We need to know the number of nodes in the tree before array declaration. It is the main disadvantage of using arrays to \nrepresent binary trees."
+        },
+        {
+            "question": "3. What must be the ideal size of array if the height of tree is ‘l’?",
+            "options": [
+                "2l-1",
+                "l-1",
+                "l",
+                "2l"
+            ],
+            "answer": "a",
+            "explanation": "Maximum elements in a tree (complete binary tree in worst case) of height ‘L’ is 2L-1. Hence size of array is taken as 2L-1."
+        },
+        {
+            "question": "4. What are the children for node ‘w’ of a complete-binary tree in an array representation?",
+            "options": [
+                "2w and 2w+1",
+                "2+w and 2-w",
+                "w+1/2 and w/2",
+                "w-1/2 and w+1/2"
+            ],
+            "answer": "a",
+            "explanation": "The left child is generally taken as 2*w whereas the right child will be taken as 2*w+1 because root node is present at index 0 in the array and to access every \nindex position in the array."
+        },
+        {
+            "question": "5. What is the parent for a node ‘w’ of a complete binary tree in an array representation when w is not 0?",
+            "options": [
+                "floor(w-1/2)",
+                "ceil(w-1/2)",
+                "w-1/2",
+                "w/2"
+            ],
+            "answer": "a",
+            "explanation": "Floor of w-1/2 because we can’t miss a node. \nadvertisement"
+        },
+        {
+            "question": "6. If the tree is not a complete binary tree then what changes can be made for easy access of children of a node in the array?",
+            "options": [
+                "every node stores data saying which of its children exist in the array",
+                "no need of any changes continue with 2w and 2w+1, if node is at i",
+                "keep a seperate table telling children of a node",
+                "use another array parallel to the array with tree"
+            ],
+            "answer": "a",
+            "explanation": "Array cannot represent arbitrary shaped trees. It can only be used in case of complete trees. If every node stores data saying that which of its children exists in the \narray then elements can be accessed easily."
+        },
+        {
+            "question": "7. What must be the missing logic in place of missing lines for finding sum of nodes of binary tree in alternate levels? \n  //e.g:-consider -complete binary tree:-height-3, [1,2,3,4,5,6,7]-answer \nmust be 23  \n  n=power(2,height )-1; //assume input is height and a[i] contains tree \nelements  \n  for(i=1;i<=n;) \n  { \n        //present level is initialized to 1 and sum is initialized to  0  \n        for(j=1;j<=pow(2,currentlevel -1);j++)  \n        { \n           sum =sum+a[i]; \n           i =i+1; \n        } \n     //missing logic  \n  }",
+            "options": [
+                "i=i+pow(2,currentlevel ); \n   currentlevel =currentlevel +2; \n   j=1;",
+                "i=i+pow(2,currentlevel ); \n   currentlevel =currentlevel +2; \n   j=0;",
+                "i=i-pow(2,currentlevel ); \n   currentlevel =currentlevel +2; \n   j=1;",
+                "i=i+pow(2,currentlevel );"
+            ],
+            "answer": "a",
+            "explanation": "The i value must skip through all nodes in the next level and current level must be one+next level."
+        },
+        {
+            "question": "8. Consider a situation of writing a binary tree into a file with memory storage efficiency in mind, is array representation of tree is good?",
+            "options": [
+                "yes because we are overcoming the need of pointers and so space efficiency",
+                "yes because array values are indexable",
+                "No it is not efficient in case of sparse trees and remaning cases it is fine",
+                "No linked list representation of tree is only fine"
+            ],
+            "answer": "c",
+            "explanation": "In case of sparse trees (where one node per level in worst cases), the array size (2h)-1 where h is height but only h indexes will be filled and (2h)-1-h nodes will be \nleft unused leading to space wastage."
+        },
+        {
+            "question": "9. Why is heap implemented using array representations than tree(linked list) representations though both tree representations and heaps have same complexities? \nfor binary heap \n-insert: O(log n) \n-delete min : O(log n) \n  \nfor a tree \n-insert: O(log n) \n-delete: O(log n) \nThen why go with array representation when both are having same values ?",
+            "options": [
+                "arrays can store trees which are complete and heaps are not complete",
+                "lists representation takes more memory hence memory efficiency is less and go with arrays and arrays have better caching",
+                "lists have better caching d) In lists insertion and deletion is difficult \n \nAnswer: b \nExplanation: In memory the pointer address for next node may not be adjacent or nearer to each other and also array have wonderful caching power from os and manipulating \npointers is a overhead. Heap data structure is always a complete binary tree. \n10. Can a tree stored in an array using either one of inorder or post order or pre order traversals be again reformed? \na) Yes just traverse through the array and form the tree \nb) No we need one more traversal to form a tree \nc) No in case of sparse trees",
+                "Yes by using both inorder and array elements"
+            ],
+            "answer": "b",
+            "explanation": "We need any two traversals for tree formation but if some additional stuff or techniques are used while storing a tree in an array then one traversal can facilitate like \nalso storing null values of a node in array. \nB+ Tree Multiple Choice Questions and Answers (MCQs) \nThis set of Data Structures & Algorithms Multiple Choice Questions & Answers (MCQs) focuses on “B+ Tree”."
+        },
+        {
+            "question": "1. In a B+ tree, both the internal nodes and the leaves have keys.",
+            "options": [
+                "True",
+                "False \n \nAnswer: b \nExplanation: In a B+ -tree, only the leaves have keys, and these keys are replicated in non-leaf nodes for defining the path for locating individual records. \n2. Which of the following is true? \na) B + tree allows only the rapid random access \nb) B + tree allows only the rapid sequential access",
+                "B + tree allows rapid random access as well as rapid sequential access",
+                "B + tree allows rapid random access and slower sequential access"
+            ],
+            "answer": "c",
+            "explanation": "The B+ -tree being a variation of B-tree allows rapid random access. In a B+ -tree the leaves are linked together, so it also provides rapid sequential access."
+        },
+        {
+            "question": "3. A B+ tree can contain a maximum of 7 pointers in a node. What is the minimum number of keys in leaves?",
+            "options": [
+                "6",
+                "3",
+                "4",
+                "7"
+            ],
+            "answer": "b",
+            "explanation": "Maximum number of pointers in a node is 7, i.e. the order of the B+ -tree is 7. In a B+ tree of order n each leaf node contains at most n – 1 key and at least ⌈(n − \n1)/2⌉ keys. Therefore, a minimum number of keys each leaf can have = ⌈(7 – 1)/2⌉ = 3."
+        },
+        {
+            "question": "4. Which of the following is false?",
+            "options": [
+                "A B+ -tree grows downwards",
+                "A B+ -tree is balanced",
+                "In a B+ -tree, the sibling pointers allow sequential searching",
+                "B+ -tree is shallower than B-tree"
+            ],
+            "answer": "a",
+            "explanation": "A B+ -tree always grows upwards. And In a B+tree – i)The path from the root to every leaf node is of the same length, so the tree is balanced. ii) Leaves are linked, \nso allow sequential searching. iii) An index is built with a single key per block of data rather than with one key per data record, so it is shallower than B-tree."
+        },
+        {
+            "question": "5. A B+ -tree of order 3 is generated by inserting 89, 9 and 8. The generated B+ -tree is __________",
+            "options": [
+                "b)  \nc)  \nd)  \n \nAnswer: b \nExplanation: \n \nadvertisement \n6. Statement 1: When a node is split during insertion, the middle key is promoted to the parent as well as retained in right half-node. \nStatement 2: When a key is deleted from the leaf, it is also deleted from the non-leaf nodes of the tree. \na) Statement 1 is true but statement 2 is false",
+                "Statement 2 is true but statement 1 is false",
+                "Both the statements are true",
+                "Both the statements are false"
+            ],
+            "answer": "a",
+            "explanation": "During the split, the middle key is retained in the right half node and also promoted to parent node. When a key is deleted from the leaf, it is retained in non-leaves, \nbecause it can be still a valid separator between keys in nodes below."
+        },
+        {
+            "question": "7. Efficiency of finding the next record in B+ tree is ____",
+            "options": [
+                "O(n)",
+                "O(log n)",
+                "O(nlog n)",
+                "O(1)"
+            ],
+            "answer": "d",
+            "explanation": "In a B+ -tree finding the next recored (successor) involves accessing an additional leaf at most. So, the efficiency of finding the next record is O(1)."
+        },
+        {
+            "question": "8. What is the maximum number of keys that a B+ -tree of order 3 and of height 3 have?",
+            "options": [
+                "3",
+                "80",
+                "27",
+                "26"
+            ],
+            "answer": "d",
+            "explanation": "A B+ tree of order n and height h can have at most nh – 1 keys. Therefore maximum number of keys = 33 -1 = 27 -1 = 26."
+        },
+        {
+            "question": "9. Which of the following is false?",
+            "options": [
+                "Compared to B-tree, B+ -tree has larger fanout",
+                "Deletion in B-tree is more complicated than in B+ -tree",
+                "B+ -tree has greater depth than corresponding B-tree",
+                "Both B-tree and B+ -tree have same search and insertion efficiencies"
+            ],
+            "answer": "c",
+            "explanation": "A B+ -tree has larger fanout and therefore have a depth smaller than that of corresponding B-tree."
+        },
+        {
+            "question": "10. Which one of the following data structures are preferred in database-system implementation?",
+            "options": [
+                "AVL tree",
+                "B-tree",
+                "B+ -tree",
+                "Splay tree"
+            ],
+            "answer": "c",
+            "explanation": "The database-system implementations use B+ -tree data structure because they can be used for multilevel indexing. \nData Structure Questions and Answers – AVL Tree \nThis set of Data Structure Multiple Choice Questions & Answers (MCQs) focuses on “AVL Tree”."
+        },
+        {
+            "question": "1. What is an AVL tree?",
+            "options": [
+                "a tree which is balanced and is a height balanced tree",
+                "a tree which is unbalanced and is a height balanced tree",
+                "a tree with three children",
+                "a tree with atmost 3 children"
+            ],
+            "answer": "a",
+            "explanation": "It is a self balancing tree with height difference atmost 1."
+        },
+        {
+            "question": "2. Why we need to a binary tree which is height balanced?",
+            "options": [
+                "to avoid formation of skew trees",
+                "to save memory",
+                "to attain faster memory access",
+                "to simplify storing"
+            ],
+            "answer": "a",
+            "explanation": "In real world dealing with random values is often not possible, the probability that u are dealing with non random values(like sequential) leads to mostly skew trees, \nwhich leads to worst case. hence we make height balance by rotations."
+        },
+        {
+            "question": "3. Which of the below diagram is following AVL tree property? \ni.  \nii.",
+            "options": [
+                "only i",
+                "only i and ii",
+                "only ii",
+                "i is not a binary search tree"
+            ],
+            "answer": "b",
+            "explanation": "The property of AVL tree is it is height balanced tree with difference of atmost 1 between left and right subtrees. All AVL trees are binary search tree."
+        },
+        {
+            "question": "4. What is the maximum height of an AVL tree with p nodes?",
+            "options": [
+                "p",
+                "log(p)",
+                "log(p)/2",
+                "p»2"
+            ],
+            "answer": "b",
+            "explanation": "Consider height of tree to be ‘he’, then number of nodes which totals to p can be written in terms of height as N(he)=N(he-1)+1+N(he-2). since N(he) which is p can \nbe written in terms of height as the beside recurrence relation which on solving gives N(he)= O(logp) as worst case height."
+        },
+        {
+            "question": "5. To restore the AVL property after inserting a element, we start at the insertion point and move towards root of that tree. is this statement true?",
+            "options": [
+                "true",
+                "false \n \nAnswer: a \nExplanation: It is interesting to note that after insertion, only the path from that point to node or only that subtrees are imbalanced interms of height. \nadvertisement \n6. Given an empty AVL tree, how would you construct AVL tree when a set of numbers are given without performing any rotations? \na) just build the tree with the given input \nb) find the median of the set of elements given, make it as root and construct the tree",
+                "use trial and error",
+                "use dynamic programming to build the tree"
+            ],
+            "answer": "b",
+            "explanation": "Sort the given input, find the median element among them, make it as root and construct left and right subtrees with elements lesser and greater than the median \nelement recursively. this ensures the subtrees differ only by height 1."
+        },
+        {
+            "question": "7. What maximum difference in heights between the leafs of a AVL tree is possible?",
+            "options": [
+                "log(n) where n is the number of nodes",
+                "n where n is the number of nodes",
+                "0 or 1",
+                "atmost 1"
+            ],
+            "answer": "a",
+            "explanation": "At every level we can form a tree with difference in height between subtrees to be atmost 1 and so there can be log(n) such levels since height of AVL tree is \nlog(n)."
+        },
+        {
+            "question": "8. Consider the pseudo code: \n  int avl(binarysearchtree root ): \n     if(not root ) \n       return 0 \n     left_tree_height = avl(left_of_root ) \n  \n     if(left_tree_height == -1)  \n       return left_tree_height \n  \n     right_tree_height = avl(right_of_root ) \n  \n     if(right_tree_height ==-1) \n       return right_tree_height \nDoes the above code can check if a binary search tree is an AVL tree?",
+            "options": [
+                "yes",
+                "no \n \nAnswer: a \nExplanation: The condition to check the height difference between left and right subtrees is missing. if (absolute(left_tree_height – right_tree_height)>1) must be added. \n9. Consider the below left-left rotation pseudo code where the node contains value pointers to left, right child nodes and a height value and Height() function returns height value \nstored at a particular node. \n avltree leftrotation (avltreenode z ): \n   avltreenode w =x-left \n   x-left=w-right \n   w-right=x \n   x-height=max(Height(x-left),Height (x-right))+1  \n   w-height=max(missing )+1    \n  return w \nWhat is missing? \na) Height(w-left), x-height \nb) Height(w-right), x-height",
+                "Height(w-left), x",
+                "Height(w-left)"
+            ],
+            "answer": "a",
+            "explanation": "In the code we are trying to make the left rotation and so we need to find maximum of those two values."
+        },
+        {
+            "question": "10. Why to prefer red-black trees over AVL trees?",
+            "options": [
+                "Because red-black is more rigidly balanced",
+                "AVL tree store balance factor in every node which costs space",
+                "AVL tree fails at scale",
+                "Red black is more efficient"
+            ],
+            "answer": "b",
+            "explanation": "Every node in an AVL tree need to store the balance factor (-1, 0, 1) hence space costs to O(n), n being number of nodes. but in red-black we can use the sign of \nnumber (if numbers being stored are only positive) and hence save space for storing balancing information. there are even other reasons where redblack is mostly prefered. \nData Structure Questions and Answers – Graph \nThis set of Data Structure Multiple Choice Questions & Answers (MCQs) focuses on “Graph”."
+        },
+        {
+            "question": "1. Which of the following statements for a simple graph is correct?",
+            "options": [
+                "Every path is a trail",
+                "Every trail is a path",
+                "Every trail is a path as well as every path is a trail",
+                "Path and trail have no relation"
+            ],
+            "answer": "a",
+            "explanation": "In a walk if the vertices are distinct it is called a path, whereas if the edges are distinct it is called a trail. 2. In the given graph identify the cut vertices. \n \na) B and E \nb) C and D \nc) A and E \nd) C and B \n \nAnswer: d \nExplanation: After removing either B or C, the graph becomes disconnected."
+        },
+        {
+            "question": "3. For the given graph(G), which of the following statements is true?",
+            "options": [
+                "G is a complete graph",
+                "G is not a connected graph",
+                "The vertex connectivity of the graph is 2",
+                "The edge connectivity of the graph is 1"
+            ],
+            "answer": "c",
+            "explanation": "After removing vertices B and C, the graph becomes disconnected."
+        },
+        {
+            "question": "4. What is the number of edges present in a complete graph having n vertices?",
+            "options": [
+                "(n*(n+1))/2",
+                "(n*(n-1))/2",
+                "n",
+                "Information given is insufficient"
+            ],
+            "answer": "b",
+            "explanation": "Number of ways in which every vertex can be connected to each other is nC2."
+        },
+        {
+            "question": "5. The given Graph is regular.",
+            "options": [
+                "True",
+                "False \n \nAnswer: a \nExplanation: In a regular graph, degrees of all the vertices are equal. In the given graph the degree of every vertex is 3. \nadvertisement \n6. In a simple graph, the number of edges is equal to twice the sum of the degrees of the vertices. \na) True \nb) False \n \nAnswer: b \nExplanation: The sum of the degrees of the vertices is equal to twice the number of edges. \n7. A connected planar graph having 6 vertices, 7 edges contains _____________ regions. \na) 15 \nb) 3",
+                "1",
+                "11"
+            ],
+            "answer": "b",
+            "explanation": "By euler’s formula the relation between vertices(n), edges(q) and regions(r) is given by n-q+r=2."
+        },
+        {
+            "question": "8. If a simple graph G, contains n vertices and m edges, the number of edges in the Graph G'(Complement of G) is ___________",
+            "options": [
+                "(n*n-n-2*m)/2",
+                "(n*n+n+2*m)/2",
+                "(n*n-n-2*m)/2",
+                "(n*n-n+2*m)/2"
+            ],
+            "answer": "a",
+            "explanation": "The union of G and G’ would be a complete graph so, the number of edges in G’= number of edges in the complete form of G(nC2)-edges in G(m)."
+        },
+        {
+            "question": "9. Which of the following properties does a simple graph not hold?",
+            "options": [
+                "Must be connected",
+                "Must be unweighted",
+                "Must have no loops or multiple edges",
+                "Must have no multiple edges"
+            ],
+            "answer": "a",
+            "explanation": "A simple graph maybe connected or disconnected."
+        },
+        {
+            "question": "10. What is the maximum number of edges in a bipartite graph having 10 vertices?",
+            "options": [
+                "24",
+                "21",
+                "25",
+                "16"
+            ],
+            "answer": "c",
+            "explanation": "Let one set have n vertices another set would contain 10-n vertices. \nTotal number of edges would be n*(10-n), differentiating with respect to n, would yield the answer."
+        },
+        {
+            "question": "11. Which of the following is true?",
+            "options": [
+                "A graph may contain no edges and many vertices",
+                "A graph may contain many edges and no vertices",
+                "A graph may contain no edges and no vertices",
+                "A graph may contain no vertices and many edges"
+            ],
+            "answer": "b",
+            "explanation": "A graph must contain at least one vertex."
+        },
+        {
+            "question": "12. For a given graph G having v vertices and e edges which is connected and has no cycles, which of the following statements is true?",
+            "options": [
+                "v=e",
+                "v = e+1",
+                "v + 1 = e",
+                "v = e-1"
+            ],
+            "answer": "b",
+            "explanation": "For any connected graph with no cycles the equation holds true."
+        },
+        {
+            "question": "13. For which of the following combinations of the degrees of vertices would the connected graph be eulerian?",
+            "options": [
+                "1,2,3",
+                "2,3,4",
+                "2,4,5",
+                "1,3,5"
+            ],
+            "answer": "a",
+            "explanation": "A graph is eulerian if either all of its vertices are even or if only two of its vertices are odd."
+        },
+        {
+            "question": "14. A graph with all vertices having equal degree is known as a __________",
+            "options": [
+                "Multi Graph",
+                "Regular Graph",
+                "Simple Graph",
+                "Complete Graph"
+            ],
+            "answer": "b",
+            "explanation": "The given statement is the definition of regular graphs."
+        },
+        {
+            "question": "15. Which of the following ways can be used to represent a graph?",
+            "options": [
+                "Adjacency List and Adjacency Matrix",
+                "Incidence Matrix",
+                "Adjacency List, Adjacency Matrix as well as Incidence Matrix",
+                "No way to represent"
+            ],
+            "answer": "c",
+            "explanation": "Adjacency Matrix, Adjacency List and Incidence Matrix are used to represent a graph."
+        }
+    ]
+}

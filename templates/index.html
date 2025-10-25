@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MCQ App</title>
+</head>
+<body>
+  <h1>Select a Chapter</h1>
+  <ul>
+    {% for chapter in chapters %}
+<li><a href="{{ url_for('main.quiz', chapter=chapter) }}">{{ chapter }}</a></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

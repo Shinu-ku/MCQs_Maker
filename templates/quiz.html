@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ chapter }} Quiz</title>
+</head>
+<body data-chapter="{{ chapter }}">
+  <h1>{{ chapter }} Quiz</h1>
+
+  {% for q in questions %}
+    <div>
+      <p><b>Q{{ loop.index }}. {{ q.question }}</b></p>
+      {% for option in q.options %}
+        <label>
+          <input type="radio" name="q{{ loop.index0 }}" value="{{ option }}"> {{ option }}
+        </label><br>
+      {% endfor %}
+      <button onclick="checkAnswer({{ loop.index0 }})">Check</button>
+      <hr>
+    </div>
+  {% endfor %}
+
+  <script>
+    const chapter = document.body.dataset.chapter; // ✅ clean Jinja injection
+
+    async function checkAnswer(qIndex) {
+      const selected = document.querySelector(`input[name="q${qIndex}"]:checked`);
+      if (!selected) { alert("Select an option!"); return; }
+
+      const res = await fetch("/check-answer", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+          chapter: chapter,
+          q_index: qIndex,
+          answer: selected.value
+        })
+      });
+
+      const result = await res.json();
+      alert(
+        (result.is_correct ? "✅ Correct!" : "❌ Wrong!") +
+        "\nCorrect Answer: " + result.correct +
+        "\nExplanation: " + result.explanation
+      );
+    }
+  </script>
+</body>
+</html>
